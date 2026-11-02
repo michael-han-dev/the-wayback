@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "the-wayback",
+  "version": "1.0.0",
+  "description": "Type wayback.<site> to open its Wayback Machine history.",
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "wayback",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}

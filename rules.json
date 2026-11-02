@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": { "regexSubstitution": "https://web.archive.org/web/*/\\1" }
+    },
+    "condition": {
+      "regexFilter": "^https?://wayback\\.(.+)$",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]
