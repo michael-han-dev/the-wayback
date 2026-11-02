@@ -7,13 +7,19 @@ wayback.google.com        ->  web.archive.org/web/*/google.com
 wayback.github.com/about  ->  web.archive.org/web/*/github.com/about
 ```
 
+Type `first.` instead to jump straight to the oldest snapshot.
+
+```
+first.google.com          ->  google.com as archived in 1998
+```
+
 ## Install
 
 1. Clone this repo.
 2. Open `chrome://extensions` and turn on **Developer mode**.
 3. Click **Load unpacked** and select the repo folder.
 
-Chrome asks for access to all sites because a redirect rule needs permission for the URL it rewrites, and Chrome has no pattern for "any host that starts with `wayback.`". The extension has no scripts. It ships one redirect rule in `rules.json` and nothing else.
+Chrome asks for access to all sites because a redirect rule needs permission for the URL it rewrites, and Chrome has no pattern for "any host that starts with `wayback.`". The extension has no scripts. It ships two redirect rules in `rules.json` and nothing else.
 
 ## No-install alternative
 

@@ -10,5 +10,17 @@
       "regexFilter": "^https?://wayback\\.(.+)$",
       "resourceTypes": ["main_frame"]
     }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": { "regexSubstitution": "https://web.archive.org/web/0/\\1" }
+    },
+    "condition": {
+      "regexFilter": "^https?://first\\.(.+)$",
+      "resourceTypes": ["main_frame"]
+    }
   }
 ]
